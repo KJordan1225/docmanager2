@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('background_color')->nullable();
             $table->string('foreground_color')->nullable();
             $table->string('tags')->nullable();
+            $table->integer('position')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
